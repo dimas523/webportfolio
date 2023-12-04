@@ -1,6 +1,6 @@
 {
     "capstone": {
-        "liveLink": "<github page link>",
+        "liveLink": "https://dimas523.github.io/webportfolio/",
         "name": "<your name>",
         "isMulti": false
     }
