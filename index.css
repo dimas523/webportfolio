@@ -1,0 +1,393 @@
+/*CSS Reset*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	scroll-snap-type: y;
+}
+
+
+#backImg {
+	background-color: rgba(107, 64, 111, 0.97);
+	background-image: url(./image/bg1.jpg) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#navBar {
+	font-family: 'Orbitron', sans-serif; 
+	position: fixed;
+	width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+#navBar .navbar-brand img,
+#navBar .navbar-nav .nav-link {
+  opacity: 1; /* Make the text and image fully opaque */
+}
+
+#navBar .navbar-nav .nav-link {
+	color: #fff !important;
+}
+
+#navBar .navbar-nav .nav-link:hover {
+	background-color: #00b7ff;
+	box-shadow: 0PX 0PX 25PX #00B7FF, 0PX 0PX 25PX #00B7FF, 0PX 0PX 25PX #00B7FF;
+}
+
+#navBar .navbar-nav .nav-link:active {
+	background-color: #00D1FF;
+	box-shadow: 0PX 0PX 25PX #00D1FF, 0PX 0PX 25PX #00D1FF, 0PX 0PX 25PX #00D1FF;
+}
+
+.navbar-toggler-icon {
+	background-color: red; /* Change to the desired color */
+}
+
+.fontBlackOpsOne{
+	font-family: Black Ops One, sans-serif;
+	font-size: 2rem;
+}
+
+#landing {
+	width: 100%;
+	height: 100vh;
+	padding-top: 56px;
+	align-items: center;
+	scroll-snap-align: center;
+}
+
+.fullNameImg img {
+	max-width: 100%;
+	height: 30vh;
+	display: block;
+	margin: auto; /* To center the image horizontally */
+	margin-top: 70px;
+}
+
+#landingSub{
+	margin-top: 20px;
+}
+
+.landingDesc{
+	color: white;
+	font-size: 20px;
+	max-width: 100%;
+	word-wrap: break-word; 
+	margin: auto;
+}
+
+.workDevDesc{
+	font-family: 'Russo One', sans-serif;
+	color: rgba(245, 213, 39, 0.8);
+	letter-spacing: 10px;
+	transition: text-shadow 0.3s ease-in-out;
+}
+
+.workDevDesc:hover{
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8); 
+}
+
+.workQADesc{
+	font-family: 'Press Start 2P', serif;
+	color: rgba(205, 81, 57, 0.8);
+	transition: text-shadow 0.3s ease-in-out;
+}
+
+.workQADesc:hover{
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8); 
+}
+
+
+/* Responsive font size for xtra smaller screens */
+@media only screen and (max-width: 604px) {
+	.landingDesc {
+		font-size: 30px; /* Adjust the font size for smaller screens */
+		text-align: center;
+	}
+
+	#social{
+		margin-top: 0px;
+	}
+
+	.toolsFlex{
+		padding-bottom: 60px;
+	}
+
+	.toolsFlex img{
+		max-width: 70%;
+	}
+
+	#contact p{
+		font-size: 20px;
+	}	
+}
+
+/* Responsive font size for smaller screens */
+@media only screen and (min-width: 605px) and (max-width: 760px) {
+	.landingDesc {
+		font-size: 50px; /* Adjust the font size for smaller screens */
+		text-align: center;
+	}
+
+	#social{
+		margin-top: 0px;
+	}
+
+	.projectH3{
+		font-size: 50px;
+	}
+
+	.toolH3{
+		font-size: 50px;
+	}
+
+	.toolsFlex{
+		padding-bottom: 40px;
+		padding-top: 0;
+	}
+
+	#contact p{
+		font-size: 50px;
+	}	
+}
+
+/* Responsive font size for smaller screens */
+@media only screen and (min-width: 761px) and (max-width: 870px) {
+	.landingDesc {
+		font-size: 35px; /* Adjust the font size for smaller screens */
+		text-align: center;
+	}
+	#social{
+		margin-top: 0px;
+		padding-top: 20px;
+	}
+
+	.projectH3{
+		font-size: 50px;
+	}
+
+	.toolH3{
+		font-size: 50px;
+	}
+
+	.toolsFlex{
+		border: solid darkgray;
+	}
+
+	.otherTools{
+		padding-top: 80px;
+	}
+
+	#contact p{
+		font-size: 30px;
+	}	
+}
+
+/* Additional media queries for other screen sizes if needed */
+@media only screen  and (min-width: 871px) and (max-width: 1209px) {
+	.landingDesc {
+		font-size: 40px; /* Adjust the font size for screens between 769px and 1200px */
+		padding-top:30px;
+	}
+	.workDev{
+		text-align: right;
+	}
+	.workQA{
+		text-align: left;
+	}
+
+	#social{
+		margin-top: 10px;
+	}
+
+	.projectH3{
+		font-size: 50px;
+	}
+
+	.toolH3{
+		font-size: 50px;
+	}
+
+	.otherTools{
+		padding-top: 80px;
+	}
+
+	.toolsFlex{
+		border: solid darkgray;
+	}
+	
+	#contact p{
+		font-size: 30px;
+	}
+	
+}
+
+/* Additional media queries for other screen sizes if needed */
+@media only screen  and (min-width: 1210px){
+	.landingDesc {
+		font-size: 50px; /* Adjust the font size for screens between 769px and 1200px */
+		padding-top:30px;
+	}
+	.workDev{
+		text-align: right;
+	}
+	.workQA{
+		text-align: left;
+	}
+
+	#social{
+		margin-top: 30px;
+	}
+
+	.projectH3{
+		font-size: 80px;	
+	}
+
+	.toolH3{
+		font-size: 80px;
+	}
+
+	.otherTools{
+		padding-top: 80px;
+	}
+
+	#contact p{
+		font-size: 50px;
+	}
+}
+
+#nameImg:hover {
+	opacity: 0.3;
+}
+
+#nameImg:active {
+	opacity: 0.7;
+}
+
+.FBIcon:hover {
+	color: #FFF;
+	box-shadow: 0 0 30px 3px rgba(84, 184, 187, 0.8);
+	font-size: 20px;
+	background-color: rgba(84, 184, 187, 0.8);
+}
+
+.FBIcon:active {
+	color: #FFF;
+	box-shadow: 0 0 30px 3px rgba(0, 139, 204, 1);
+	font-size: 20px;
+/*  background-color: rgba(84, 184, 187, 0.8);*/
+}
+
+.instaIcon:hover {
+	color: #FFF;
+	box-shadow: 0 0 30px 3px rgba(255, 116, 92, 1);
+	font-size: 20px;
+	background-color: rgba(84, 184, 187, 0.8);
+}
+
+.instaIcon:active {
+	color: #FFF;
+	box-shadow: 0 0 30px 3px rgba(255, 56, 20, 1);
+	font-size: 20px;
+/*  background-color: rgba(84, 184, 187, 0.8);*/
+}
+
+.gitIcon:hover {
+	color: #FFF;
+	box-shadow: 0 0 30px 3px rgba(102, 7, 162, 1);
+	font-size: 20px;
+	background-color: rgba(84, 184, 187, 0.8);
+}
+
+.gitIcon:active {
+	color: #FFF;
+	box-shadow: 0 0 30px 3px rgba(81, 5, 127, 1);
+	font-size: 20px;
+/*  background-color: rgba(84, 184, 187, 0.8);*/
+}
+
+.linkedIcon:hover {
+	color: #FFF;
+	box-shadow: 0 0 30px 3px rgba(84, 184, 187, 0.8);
+	font-size: 20px;
+	background-color: rgba(84, 184, 187, 0.8);
+}
+
+.linkedIcon:active {
+	color: #FFF;
+	box-shadow: 0 0 30px 3px rgba(0, 139, 204, 1);
+	font-size: 20px;
+/*  background-color: rgba(84, 184, 187, 0.8);*/
+}
+
+#projects {
+	background-color: black;
+	background-image: url(./image/projects.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Orbitron, sans-serif;
+	color: white;
+	scroll-snap-align: center;
+	padding-top: 50px;
+}
+
+.capstone1Img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.row{
+	max-height: 30%;
+}
+
+#tools{
+background-image: url(./image/tools.jpg);
+background-color: black;
+background-repeat: no-repeat;
+background-size: cover;
+font-family: Orbitron, sans-serif;
+color: white;
+scroll-snap-align: center;
+padding-top: 100px;
+}
+
+.projectH3{
+	color: lightgray;
+}
+
+.toolH3{
+	color: lightgray;
+}
+
+#contact{
+	padding-top: 80px;
+	background-color: black;
+	background-image: url(./image/contactBG.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#contact p{
+	font-family: Anton, sans-serif;
+	color:lightgray;
+}
+
+.formText{
+	color: white;
+	font-family: 'Orbitron', sans-serif;;
+}
+
+.formBG{
+	background-color: white;
+	opacity: 0.3;
+
+}
+
+.newLine{
+	white-space: pre-line;
+}
